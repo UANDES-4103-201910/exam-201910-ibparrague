@@ -34,13 +34,27 @@
  /* Create two equal columns that floats next to each other */
 
 
- .column2 {
+ .main-content-column {
    float: left;
    width: 100%;
    padding-top: 150px;
    padding-left: 200px;
+   padding-bottom: 50px;
  }
 
+ .column1 {
+   float: left;
+   width: 10%;
+   padding: 20px;
+   height: 300px; /* Should be removed. Only for demonstration */
+ }
+
+ .column2 {
+   float: left;
+   width: 80%;
+   padding: 10px;
+   height: 300px; /* Should be removed. Only for demonstration */
+ }
 
  /* Clear floats after the columns */
  .row:after {

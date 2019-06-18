@@ -1,3 +1,21 @@
-<a>HELLO WORLD</a>
-
-<%= link_to 'New User', new_user_path %>
+<% @products.each do |p| %>
+  <div class = "card border-0 shadow mb-4" style="background-color: lightgray">
+    <div>
+      <div class="row">
+        <div class="column1">
+          <p>PRODUCT</p>
+          <p class="lead"><%= link_to p.model, p %></p>
+        </div>
+        <div class="column2">
+          <p class="lead"> Brand: <%= p.brand %></p>
+          <p class="lead"> Model: <%= p.model %></p>
+          <p class="lead"> Variant: <%= p.variant %> </p>
+          <p class="lead"> Price: <%= p.price %></p>
+          <p class="lead"> Short Description: <%= p.short_description %></p>
+          <p class="lead"> Type: <%= p.kind %></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>&nbsp</div>
+<%end%>
