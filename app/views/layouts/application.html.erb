@@ -10,6 +10,21 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class='page'>
+      <div class='Krow'>
+        <%= render 'layouts/header' %>
+      </div>
+      <div class='Krow'>
+        <div class='column1'>
+          <%= render 'layouts/sidenav' %>
+        </div>
+        <div class='column2'>
+          <%= yield %>
+        </div>
+      </div>
+      <div class='footer_div'>
+        <%= render 'layouts/footer' %>
+      </div>
+    </div>
   </body>
 </html>

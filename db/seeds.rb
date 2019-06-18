@@ -9,6 +9,6 @@
 user1 = User.create(first_name: 'Luke', last_name: 'Skywalker',email:'firstmail@mail.com')
 User.create(first_name: 'asd') #fails because of validations
 
-Product.create(brand: 'paple', model:'I8', variant:'type-s',price: 200, short_description: 'newest phone from paple', long_description: 'the greatest product from the current line of paple devices will sweep you off your feets and roundhouse your FACE')
+Product.create(kind: "handset",brand: 'paple', model:'I8', variant:'type-s',price: 200, short_description: 'newest phone from paple', long_description: 'the greatest product from the current line of paple devices will sweep you off your feets and roundhouse your FACE')
 
 Address.create(phone: 12345678, address_line_1: 'home1', address_line_2: 'home2', city:'City17', country:'black_mesa',zip_code:'test zipcode')
