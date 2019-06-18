@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-user1 = User.create(first_name: 'Luke', last_name: 'Skywalker',email:'firstmail@mail.com')
+user1 = User.create(first_name: 'Luke', last_name: 'Skywalker',email:'firstmail@mail.com',password: '123456789')
 User.create(first_name: 'asd') #fails because of validations
 
 Product.create(kind: "handset",brand: 'paple', model:'I8', variant:'type-s',price: 200, short_description: 'newest phone from paple', long_description: 'the greatest product from the current line of paple devices will sweep you off your feets and roundhouse your FACE')
